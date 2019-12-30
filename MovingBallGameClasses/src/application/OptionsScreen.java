@@ -25,15 +25,17 @@ public class OptionsScreen {
 		buttonBack.relocate(155, 0);
 		    
 		Button buttonEasy = new Button("Leicht");
+		Button buttonmedium = new Button("Mittel");
 		Button buttonHard = new Button("Schwer");
 		buttonEasy.relocate(85, 130);
 		buttonHard.relocate(155, 130);
+		buttonmedium.relocate(45, 130);
 		
 		Label label = new Label("Schwierigkeitsgrad");
 		label.relocate(50, 100);
 		label.setFont(Font.font(17));
 		
-		root.getChildren().addAll(label, buttonEnde, buttonBack, buttonEasy, buttonHard);
+		root.getChildren().addAll(label, buttonEnde, buttonBack, buttonEasy, buttonmedium, buttonHard);
 		root.setStyle("-fx-background-color:yellow");
 		
 		stage.setScene(scene);
